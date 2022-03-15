@@ -3,8 +3,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<Machine s1='🤠' s2='🤠' s3='🤠' />
-				<Machine s1='👽' s2='👾' s3='🤠' />
-				<Machine s1='👽' s2='🤠' s3='👽' />
+				<Machine s1='🤠' s2='👽' s3='🤠' />
 			</div>
 		);
 	}
