@@ -9,3 +9,12 @@
 //? - Sets it up so that JS files are fun through Babel automatically
 //? - Lets us use super-modern JavaScript features/idioms
 //? - Makes testing & deployment much easier
+
+//* Webpack
+//? CRA is built on top of "Webpack", a JS utility that:
+//? - Eables module importing/exporting
+//? -- Packages up all the CSS/images/JS into a single file for browser
+//? -- Dramatically reduces # of HTTP requests for performance
+//? - Hot Reloading: when you change a source file, automatically reloads
+//? -- it tries to only reload relevant files
+//? - Enables easy testing & deployment
