@@ -14,6 +14,12 @@ function getMood() {
 	const moods = ['hungry', 'sad', 'depressed', 'aggrivated', 'annoyed'];
 	return moods[Math.floor(Math.random() * moods.length)]; // Grabbing random mood from Array
 }
+
+const silly = () => {
+	console.log("Silly")
+}
+
+silly();
 class JSXDemo extends React.Component {
 	render() {
 		return (
@@ -48,6 +54,7 @@ class NumPicker extends React.Component {
 		);
 	}
 }
+
 
 ReactDOM.render(<JSXDemo />, document.getElementById('root'));
 ReactDOM.render(<NumPicker />, document.getElementById('root2'));
