@@ -16,7 +16,7 @@ class Hello extends React.Component {
 				{/* THIS is JSX! HTML looking stuff in your JavaScript*/}
 				<h1>HOwdy Partner !</h1>
 				{/*These Adjacent tags MUST be wrapped in an enclosing tag*/}
-				<h1>Boppa !</h1>
+				<h1>Boppa!</h1>
 				{/*Otherwise error city!*/}
 			</div>
 		);
