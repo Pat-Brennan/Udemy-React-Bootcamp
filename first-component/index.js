@@ -38,9 +38,18 @@ function Hello2() {
 	);
 }
 
+function Emoji() {
+	return (
+		<div>
+			<h1> 💀💀💀 </h1>
+		</div>
+)
+};
+
 //? We're first telling it WHAT to render (Hello) and then WHERE to render it (root in HTML file)
 ReactDOM.render(<Hello />, document.getElementById('root'));
 ReactDOM.render(<Hello2 />, document.getElementById('otherRoot'));
+ReactDOM.render(<Emoji />, document.getElementById('stuff'));
 
 //* What the heck is the difference?
 //? Both can accept props and render content
