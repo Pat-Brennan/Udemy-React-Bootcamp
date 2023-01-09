@@ -16,11 +16,13 @@ class Doggo extends React.Component {
 	render() {
 		const { name, sound, age, pic } = this.props; // shortens writing this.props everywhere
 		return (
-			<div>
-				<h1>Name: {name}</h1>
-				<h2>Age: {age}</h2>
-				<h2>Motto: {sound}</h2>
-				<p>{pic}</p>
+			<div className='Doggo'>
+				<label htmlFor='Doggo info'>
+					<h1 style={{ fontSize: '50px', backgroundColor: 'cyan' }}>Name: {name}</h1>
+					<h2>Age: {age}</h2>
+					<h2>Motto: {sound}</h2>
+					<p>{pic}</p>
+				</label>
 			</div>
 		);
 	}

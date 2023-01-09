@@ -25,6 +25,7 @@ class App extends React.Component {
 						<img src='https://images.unsplash.com/photo-1598398386929-4d5370672e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'></img>
 					}
 				/>
+				<Doggo />
 			</div>
 		);
 	}
