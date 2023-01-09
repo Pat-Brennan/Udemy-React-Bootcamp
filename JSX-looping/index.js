@@ -5,7 +5,7 @@
 //?     render() {
 //?         const msgs = [
 //?             {id: 1, text: 'hey!'},
-//?             {id:2, text: 'what up!'},
+//?             {id: 2, text: 'what up!'},
 //?         ];
 //?     return (
 //?         <ul> {msgs.map(m => <li> {m.text} </li>)} </ul>
@@ -22,7 +22,7 @@ class App extends React.Component {
 					name='Django'
 					hobbies={['Guitar', 'More Guitar', 'Even more Guitar']}
 				/>
-                <Friend name='Jobin' hobbies={['Books', 'B-Ball']}/>
+				<Friend name='Jobin' hobbies={['Books', 'B-Ball']} />
 			</div>
 		);
 	}

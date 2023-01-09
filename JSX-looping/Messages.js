@@ -6,9 +6,9 @@ class Messages extends React.Component {
 		];
 		return (
 			<ul>
-                {msgs.map((m) => // going through each object in the array
-                    <li>{m.text}</li> // and displaying the 'text' key
-                )}
+          {msgs.map((m) => // going through each object in the array
+             <li>{m.text}</li> // and displaying the 'text' key
+          )}
 			</ul>
 		);
 	}
