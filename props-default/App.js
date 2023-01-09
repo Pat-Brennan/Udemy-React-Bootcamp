@@ -12,14 +12,16 @@ class App extends React.Component {
 					name='Bongo'
 					sound='Bark!'
 					age='666'
-					pic={ // Curly braces used in this instance because it's a data type that's NOT a string
+					pic={
+						// Curly braces used in this instance because it's a data type that's NOT a string
 						<img src='https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'></img>
 					}
 				/>
 				<Doggo />
 				<Doggo
 					name='Georgy'
-					pic={ // but we're already WITHIN PARENS from the return
+					pic={
+						// but we're already WITHIN PARENS from the return
 						<img src='https://images.unsplash.com/photo-1598398386929-4d5370672e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'></img>
 					}
 				/>
