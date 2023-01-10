@@ -1,20 +1,15 @@
 
-
-function Helpers() {
-  console.log('BEHOLD! My Helpfulness!');
+function choice(items) {
+  let chosenItem = Math.floor(Math.random() * items.length);
+  return items[chosenItem];
 }
 
-function Sort() {
-  console.log('SORTED!')
+function remove(items, item) {
+  for (let i = 0; i < items.length; i++) {
+    if (items[i] === item) {
+      return [...items.slice(0, i), ...items.slice(i + 1)];
+    }
+  }
 }
 
-function Sing() {
-  console.log('TRA LA LA!')
-}
-
-// export default Helpers
-export {
-  Helpers,
-  Sort,
-  Sing
-}
+export { choice, remove };
