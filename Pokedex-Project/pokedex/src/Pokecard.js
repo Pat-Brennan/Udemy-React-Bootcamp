@@ -1,7 +1,22 @@
+import React, { Component } from 'react';
 
-
-function Pokecard() {
-  return <h1>Hello! Am I working?</h1>
+class Pokecard extends Component {
+  render() {
+    return (
+      <div>
+        <h1> { this.props.type }</h1>
+      </div>
+    )
+  }
 }
 
+
 export default Pokecard;
+
+// function Pokecard() {
+// 	return (
+// 		<div className='Pokecard'>
+//       <h1> Do I work? </h1>
+// 		</div>
+// 	);
+// }
