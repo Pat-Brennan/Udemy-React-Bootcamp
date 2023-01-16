@@ -1,0 +1,49 @@
+//* What is State?
+
+//* Thinking about State
+//? In any sufficiently advanced web application, the user interface has to be STATEFUL
+//? Example: Logged in users are going to see a different screen than logged out users.
+//? Example: Clicking "Edit profile" opens up a modal(pop-up) window
+//? Example: Sections of a website can expand or collapse, for instance clicking "read more"
+
+//! The State of the client interface(frontend) is NOT always directly tied to state on the SERVER(backend)
+
+//* State changes
+//? State is designed to constantly CHANGE in RESPONSE to EVENTS
+//? Consider the game of chess... at any given point, the board is in a complex STATE.
+//? Every move made in chess represents a very discrete STATE CHANGE.
+
+//* What does state track?
+//? There are two types of things state on the client/frontend keeps track of:
+//? UI Logic, and Business Logic
+
+//* UI Logic
+//? The changing state of the interface i.e there is a modal(pop up) open because I am editing my profile.
+
+//* Business Logic
+//? The changing state of the data i.e In my inbox, messages are either read or unread, ->
+//? This in turn affects how they display.
+
+//* What is React State?
+//? In React, State is an instance attribute on a component.
+//? It's always an object, since you'll want to keep tract of several keys/values
+
+POJO(Plain Old JavaScript Object)
+{
+  player: "BIG TONY"
+  score: 666
+}
+
+//* Initial State
+//? State should be intialized as soon as the component is created.
+//? It is set in the CONSTRUCTOR FUNCTION, and must be called state(i.e this.state = {...})
+
+//* React Constructor Function 
+//? If your component is STATELESS, you can omit the constructor function.
+//? If you are building a component with State, you need a standard React Constructor.
+
+//? Constructor accepts ONE argument, PROPS.
+//? You must call "super(props):" at start of constructor, ->
+//? This registers your class as a React component.
+
+//? Inside the instance methods we refer to this.state, just like we did this.props.
