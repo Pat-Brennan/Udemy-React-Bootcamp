@@ -47,3 +47,22 @@ POJO(Plain Old JavaScript Object)
 //? This registers your class as a React component.
 
 //? Inside the instance methods we refer to this.state, just like we did this.props.
+
+//* Changing State
+//! You should never directly change the state! i.e Do not use this.state = { ... } twice!
+
+//* this.setState()
+//? A Built-in React method of changing a components state.
+//? Can be called in any instance method, EXCEPT THE CONSTRUCTOR!
+//? Example: this.setState({ playerName: "Johnson", score: 0 })
+
+//* What does setState do?
+//? Takes an object describing the state changes
+//? Patches state object with those changes, ->
+//? but does not touch aspects of state that were not specified in setState().
+//? i.e "If it aint broke, don't fix it!"
+
+//* setState is Asynchronous! 
+//? The component state will *eventually* update
+//? React controls when the state will actually change, for performance reasons.
+//? Components entirely re-render when their state changes.
