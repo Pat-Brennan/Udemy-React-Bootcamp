@@ -66,3 +66,9 @@ POJO(Plain Old JavaScript Object)
 //? The component state will *eventually* update
 //? React controls when the state will actually change, for performance reasons.
 //? Components entirely re-render when their state changes.
+
+//*React Events 
+//? State most commonly changes in a direct response to some kind of event.
+
+//? Every JSX Element has BUILT-IN ATTRIBUTES respresenting EVERY KIND OF BROWSER EVENT.
+//? They are camelCased like "onClick" and take callback functions as event listeners.
