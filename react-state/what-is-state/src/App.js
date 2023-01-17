@@ -3,6 +3,7 @@ import Game from './Game';
 import Rando from './rando';
 import Demo from './Demo';
 import Button from './Button';
+import BrokenClick from './BrokenClick';
 import './App.css';
 
 
@@ -14,6 +15,7 @@ class App extends Component {
         <Demo animal='Bobcat' food='Pineapples' />
         <Rando maxNum={7} />
         <Button />
+        <BrokenClick />
 			</div>
 		);
 	}
