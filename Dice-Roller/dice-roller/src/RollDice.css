@@ -11,6 +11,7 @@
 }
 
 .RollDice button {
+  align-self: center;
   width: 15em;
   padding: 1.5em;
   margin-top: 3em;

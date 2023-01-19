@@ -2,4 +2,42 @@
   font-size: 10em;
   padding: 0.25em;
   color: darkcyan;
+  transition: 1.5s;
+}
+
+.shaking {
+  animation-name: wobble;
+  animation-duration: 1s;
+  color: lightcoral;
+  transition: 1s;
+}
+
+@keyframes wobble {
+  from {
+    transform: translate3d(0,0,0);
+  }
+
+  15% {
+    transform: perspective(500px) translate3d(-25%,0,100px) rotate3d(0,0,1, -5deg);
+  }
+
+  30% {
+    transform: perspective(500px) translate3d(20%,0,100px) rotate3d(0,0,1, 3deg);
+  }
+
+  45% {
+    transform: perspective(500px) translate3d(-15%,0,100px) rotate3d(0,0,1, -3deg);
+  }
+
+  60% {
+    transform: perspective(300px) translate3d(10%,0,50px) rotate3d(0,0,1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-10%,0,0) rotate3d(0,0,1, -1deg);
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+  }
 }

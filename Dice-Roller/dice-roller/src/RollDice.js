@@ -11,6 +11,7 @@ class RollDice extends Component {
 		this.state = {
 			die1: 'one',
 			die2: 'one',
+			rolling: false,
 		};
 		this.roll = this.roll.bind(this);
 	}
@@ -23,18 +24,23 @@ class RollDice extends Component {
 			this.props.sides[Math.floor(Math.random() * this.props.sides.length)];
 
 		//? Set the state to the new rolls
-		this.setState({ die1: newDie1, die2: newDie2 });
+		this.setState({ die1: newDie1, die2: newDie2, rolling: true });
+
+		//? Wait a second, then set rolling to false again
+		setTimeout(() => {
+			this.setState({ rolling: false });
+		}, 1000);
 	}
 
 	render() {
 		return (
 			<div className='RollDice'>
 				<div className='RollDice-container'>
-					<Die face={this.state.die1} />
-					<Die face={this.state.die2} />
+					<Die face={this.state.die1} rolling={this.state.rolling} />
+					<Die face={this.state.die2} rolling={this.state.rolling} />
 				</div>
-				<button type='submit' onClick={this.roll}>
-					💀 Roll Them Bonez 🦴
+				<button type='submit' onClick={this.roll} disabled={this.state.rolling}>
+					{this.state.rolling ? '👻 Death Waits... 👻' : '💀 Roll Them Bonez 🦴'}
 				</button>
 			</div>
 		);
