@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Die from './Die';
+import './RollDice.css';
 
 class RollDice extends Component {
 	static defaultProps = {
@@ -13,6 +14,7 @@ class RollDice extends Component {
 		};
 		this.roll = this.roll.bind(this);
 	}
+
 	roll() {
 		//? creates two new rolls with index of sides array
 		const newDie1 =
@@ -26,11 +28,13 @@ class RollDice extends Component {
 
 	render() {
 		return (
-			<div>
-				<Die face={this.state.die1} />
-				<Die face={this.state.die2} />
+			<div className='RollDice'>
+				<div className='RollDice-container'>
+					<Die face={this.state.die1} />
+					<Die face={this.state.die2} />
+				</div>
 				<button type='submit' onClick={this.roll}>
-					Roll Them Bonez!
+					💀 Roll Them Bonez 🦴
 				</button>
 			</div>
 		);
