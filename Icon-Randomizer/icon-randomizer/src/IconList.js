@@ -51,7 +51,7 @@ class IconList extends Component {
 		const icons = this.state.icons.map((i) => <i className={`fas fa-${i}`} />);
 		return (
 			<div>
-				<h1> ☀️ ICONS 🌈</h1>
+				<h1> ☀️ ICONS 🌈 </h1>
 				<h2> {icons} </h2>
 				<button type='submit' onClick={this.addIcon}>
 					Add New Icon!
