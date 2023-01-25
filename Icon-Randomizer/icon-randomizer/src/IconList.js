@@ -8,6 +8,35 @@ import React, { Component } from 'react';
 //? But it's almost always worth it to ensure that your app doesn't have extremely ->
 //? difficult to detect bugs due to mischevious side effects.
 
+//* Minimize your State
+//? In React, you want to try to put as little data in state as possible.
+//? Things to consider, Does 'x' change? If not, 'x' should not be part of the state. It should be a prop!
+//? Is 'x' already captured by some other value 'y' in state or props? DERIVE from it there instead.
+
+//* Example of BAD STATE DESIGN
+//? Let's imagine this is a person. What will change in terms of a persons state?
+// this.state = {
+//   firstName: 'Bongo', - This shouldn't change very often : Make it a prop!
+//   lastName: 'Popples', - This shouldn't change very often : Make it a prop!
+//   birthday: '666-420-69', - This shouldn't change very often : Make it a prop!
+//   age: '666', - this can be derived from props based on birthday : Make it a prop!
+//   mood: 'Angry!' - THIS COULD CHANGE OFTEN. Keep it in STATE!
+// }
+
+//* Example of GOOD STATE DESIGN
+//? Establish what will not change, and put that shit in props
+// this.props = {
+//   firstName: 'Bongo',
+//   lastName: 'Popples',
+//   birthday: '666-420-69',
+//   age: '666'
+// }
+
+//? Establish what will change, and put that shit in state
+// this.state = {
+//   mood: 'ANGRY!'
+// }
+
 class IconList extends Component {
 	static defaultProps = {
 		options: [
