@@ -37,6 +37,18 @@ import React, { Component } from 'react';
 //   mood: 'ANGRY!'
 // }
 
+//* State should live on the PARENT
+//! We want to support the "DOWNWARD DATA FLOW" Philosophy of React!
+//? In general, it makes more sense for a parent component to manage state, ->
+//? and have a bunch of "dumb" stateless child display components.
+//? This makes deubgging easier, because the state is CENTRALIZED.
+//? In other words, it's easier to predict where to find state.
+
+//* State Debugging
+//? Is the current component stateless?
+//? Find out what is rendering it.
+//? There's the state. (More than likely)
+
 class IconList extends Component {
 	static defaultProps = {
 		options: [
