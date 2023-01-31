@@ -1,0 +1,12 @@
+.Button {
+  background-color: lightcoral;
+  border: 5px solid;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bolder;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 200px;
+  height: 80px;
+  border: red;
+  margin-top: 2em;
+}
