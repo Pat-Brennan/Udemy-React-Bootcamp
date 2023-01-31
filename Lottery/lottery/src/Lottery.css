@@ -1,3 +1,12 @@
+.Lottery {
+  background-color: aquamarine;
+  border: solid 2px rgb(235, 188, 235);
+  border-radius: 10px;
+  text-align: center;
+  margin: 1em auto auto;
+  width: 40em;
+}
+
 .Button {
   background-color: lightcoral;
   border: 5px solid;
@@ -9,4 +18,10 @@
   height: 80px;
   border: red;
   margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+Button:hover {
+  transition: 1s;
+  background-color:rgb(235, 188, 235);
 }

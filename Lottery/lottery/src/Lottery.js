@@ -27,7 +27,7 @@ class Lottery extends Component {
 
 	render() {
 		return (
-			<section>
+			<section className='Lottery'>
 				<h1> {this.props.title} </h1>
 				<div>
 					{/* Using .map() to iterate over our props to generate lotto balls */}
