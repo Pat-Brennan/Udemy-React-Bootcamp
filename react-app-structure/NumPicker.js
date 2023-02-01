@@ -27,5 +27,5 @@ function NumPicker() {
 				<img src='https://media2.giphy.com/media/S3We8KS67EbjID2H85/200w.webp?cid=ecf05e4788oez0v2i5h21udzq6zzkzap7iayxu9ynz25f1bi&rid=200w.webp&ct=g'></img>
 			) : null}
 		</div>
-    );
+	);
 }
