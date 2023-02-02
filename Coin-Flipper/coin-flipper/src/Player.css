@@ -2,4 +2,5 @@
 .Player img {
   width: 800px;
   height: 350px;
+  border-radius: 10px;
 }
