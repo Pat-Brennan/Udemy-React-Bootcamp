@@ -1,0 +1,17 @@
+.WiseSquare {
+  background-color: aquamarine;
+  height: 20em;
+  width: 20em;
+  flex: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 5em;
+}
