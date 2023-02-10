@@ -1,0 +1,17 @@
+.ButtonList {
+  height:300px;
+  width:300px;
+  flex: flex;
+}
+
+button {
+  height: 5em;
+  width: 10em;
+  flex: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  margin-right: 2em;
+  font-weight: bolder;
+  font-family: cursive;
+}
