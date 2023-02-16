@@ -9,7 +9,6 @@ class BetterNumberItem extends Component {
 		console.log('INSIDE HANDLE REMOVE');
 		this.props.remove(this.props.value);
 	}
-
 	render() {
 		return (
 			<li>
